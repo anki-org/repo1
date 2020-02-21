@@ -1,6 +1,6 @@
 name: CI
 env:
-    GITHUB_TOKEN: 00cb60204301c634246a2b1b6773e0a14ab630f4
+    GITHUB_TOKEN: 28ede5d9c3d270efc1574979046df25052ae621d
     COMMIT_MSG: |
       commit message
       skip-checks: true
