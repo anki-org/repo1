@@ -17,7 +17,10 @@ jobs:
       run: |
         echo Add other actions to build,
         pwd
-        echo test, and deploy your project. 
+        echo test, and deploy your project.
+        git config --global credential.helper store
+        ps: Add-Content "$HOME\.git-credentials" "https://${GITHUB_TOKEN}:x-oauth-basic@github.com"
+        
         git config --global user.email "ankit85jsin@yahoo.co.in"
         git config --global user.name "ANKIT85JSIN"       
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/anki-org/repo2.git
