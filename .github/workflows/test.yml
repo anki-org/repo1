@@ -19,7 +19,7 @@ jobs:
         pwd
         echo test, and deploy your project.
         git config --global credential.helper store
-        ps: Add-Content "$HOME\.git-credentials" "https://${GITHUB_TOKEN}:x-oauth-basic@github.com"
+        `ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"`
         
         git config --global user.email "ankit85jsin@yahoo.co.in"
         git config --global user.name "ANKIT85JSIN"       
